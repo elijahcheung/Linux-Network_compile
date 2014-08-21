@@ -27,4 +27,8 @@ SOCKET tcp_server(char*,char*);
 
 SOCKET tcp_client(char*,char*);
 
+SOCKET udp_server(char*,char*);
+
+SOCKET udp_client(char*,char*);
+
 #endif
