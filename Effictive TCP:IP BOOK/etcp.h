@@ -21,6 +21,7 @@
 #include <arpa/inet.h>
 #include "skel.h"
 
+static void set_address(char *host,char *port,struct sockaddr_in *sap,char *protocol);
 
 SOCKET tcp_server(char*,char*);
 
