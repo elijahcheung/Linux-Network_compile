@@ -25,4 +25,6 @@ static void set_address(char *host,char *port,struct sockaddr_in *sap,char *prot
 
 SOCKET tcp_server(char*,char*);
 
+SOCKET tcp_client(char*,char*);
+
 #endif
