@@ -1,3 +1,5 @@
+#include "etcp.h"
+
 int readn(SOCKET fd,char *bp,size_t len)
 {
 	int cnt;

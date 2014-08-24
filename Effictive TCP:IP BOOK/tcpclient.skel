@@ -34,7 +34,7 @@ int main(int argc,char **argv)
 	
 	if(connect(s,(struct sockaddr*)&peer,sizeof(peer)))
 	{
-		error(1,error,"connect failed");
+		error(1,errno,"connect failed");
 	}
 	client(s,&peer);
 	EXIT(0);

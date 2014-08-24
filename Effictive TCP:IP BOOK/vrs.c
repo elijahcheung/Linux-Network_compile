@@ -1,4 +1,5 @@
-#include "etcp.h"
+#include "library/etcp.h"
+#include "library/skel.h"
 
 int main(int argc,char **argv)
 {
@@ -19,7 +20,7 @@ int main(int argc,char **argv)
 	{
 		s = tcp_server(argv[1],argv[2]);
 	}
-	s1 = accept(s,(struct sockaddr*)&peer,&peerlen);
+	s1 = accept(s,(struct sockaddr*)&peer,(socklen_t *)&peerlen);
 	if(!isvalidsock(s1))
 	{
 		error(1,errno,"accept failed");

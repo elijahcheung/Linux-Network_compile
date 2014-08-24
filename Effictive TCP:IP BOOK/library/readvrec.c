@@ -1,3 +1,4 @@
+#include "etcp.h"
 int readvrec(SOCKET fd,char *bp,size_t len)
 {
 	u_int32_t reclen;
